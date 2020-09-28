@@ -42,7 +42,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean userContinue = true;
-        char[] permitidas = {'[',']','{','}','(',')'};
+        char[] permitidas = {'[',']','{','}','(',')','<','>'};
         
 	        //DESCOMENTAR PARA RODAR ARQUIVO DO PRO
 	        String[] inputs = {"[](){}", "[)]{}", "[(]){}<>", "(((((([]))))))", "{{[[()]()]}}", "{[[([)]]]}", "<{(())}>", "{<[]()[[]]<>>}"};
@@ -50,7 +50,7 @@ public class Main {
 
         while (userContinue) {
         	String entradaTemp = "";
-            System.out.println("Digite uma sentença: <{[( )]}>");
+            System.out.println("Digite uma sentenï¿½a: <{[( )]}>");
             String sentence = scanner.nextLine();
             String[] userInput = { sentence };
             boolean verificaString = false;
@@ -71,9 +71,9 @@ public class Main {
             		}
             	}
             	if(userContinue) {
-                    System.out.println(ValidateWord(word) ? "Válido" : "Inválido");            		
+                    System.out.println(ValidateWord(word) ? "Vï¿½lido" : "Invï¿½lido");            		
             	} else {
-            		System.out.println("Caracter inválido detectado, encerrando tentativa");
+            		System.out.println("Caracter invï¿½lido detectado, encerrando tentativa");
             	}
             }
 
